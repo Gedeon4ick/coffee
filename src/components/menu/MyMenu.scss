@@ -1,0 +1,22 @@
+.menu {
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        gap: 40px;
+        
+        li {
+            a {
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 17px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
