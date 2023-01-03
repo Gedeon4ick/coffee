@@ -1,11 +1,11 @@
 import React from 'react';
 import Li from '../li/Li';
 
-const Ul = ({nameMenu}) => {
+const Ul = ({nameMenu, style}) => {
     return (
         <ul>
             {nameMenu.map((element) => {
-                return <Li element={element} key={element.id}/>
+                return <Li style={style} element={element} key={element.id}/>
             })}
         </ul>
     );

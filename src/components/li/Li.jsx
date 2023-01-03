@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Li = ({element}) => {
+const Li = ({element, style}) => {
     const {id, name} = element;
     return (
         <div>
-            <li><a href="#">{name}</a></li>
+            <li><a style={style} href="#">{name}</a></li>
         </div>
     );
 };
