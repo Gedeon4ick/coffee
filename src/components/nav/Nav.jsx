@@ -4,7 +4,6 @@ import logoBlack from '../../icons/coffee-beans-black.png'
 import Ul from '../unorder/Ul'
 
 const Nav = ({nameMenu, color}) => {
-    
     return (
         <div>
             <nav>

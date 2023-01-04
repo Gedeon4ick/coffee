@@ -1,7 +1,10 @@
 import  {React} from 'react';
+import { BrowserRouter, Routes, Route, Redirect } from 'react-router-dom';
 import './style/style.scss';
-import Nav from './components/nav/Nav';
-import MyMenu from './components/menu/MyMenu';
+import Home from './pages/Home';
+import Our from './pages/Our';
+import FYP from './pages/FYP';   
+import ERROR from './pages/ERROR';
 
 
 
@@ -9,17 +12,21 @@ function App() {
   // const [location, setLocation] = useState({location: 'en'})
 
   const nameMenu = [
-    {id: 1, name: 'Coffee house'},
-    {id: 2, name: 'Our coffee'},
-    {id: 3, name: 'For your pleasure'},
+    {id: 1, name: 'Coffee house', to: '/'},
+    {id: 2, name: 'Our coffee', to: '/Our'},
+    {id: 3, name: 'For your pleasure', to: '/FYP'},
   ]
-
+ 
 
   return (
-    <div className="App">
-      <MyMenu nameMenu={nameMenu}/>
-      <Nav  nameMenu={nameMenu}/>
-    </div>
+      <BrowserRouter>
+        <Routes>
+            <Route exact path="/" element={<Home nameMenu={nameMenu}/>}/>
+            <Route path="/Our" element={<Our nameMenu={nameMenu}/>}/>
+            <Route  path="/FYP" element={<FYP nameMenu={nameMenu}/>}/>
+            <Route path="*" element={<ERROR/>}/>
+        </Routes>
+      </BrowserRouter>
   );
 }
 

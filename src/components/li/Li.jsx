@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const Li = ({element, style}) => {
-    const {id, name} = element;
+    const {id, name, to} = element;
     return (
-        <div>
-            <li><a style={style} href="#">{name}</a></li>
-        </div>
+        <li>
+            <Link style={style} to={to}>{name}</Link>
+        </li>
     );
 };
 
