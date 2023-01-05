@@ -1,6 +1,6 @@
 import React from 'react';
 import list from '../../../icons/list.svg';
-import blackList from '../../../icons/black-list.png';
+import blackList from '../../../icons/black-list.svg';
 import './Hr.scss'
 
 const Hr = ({black}) => {
