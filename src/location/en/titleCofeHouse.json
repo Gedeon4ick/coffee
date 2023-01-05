@@ -1,0 +1,12 @@
+{
+    "main": {
+        "title": "Everything You Love About Coffee",
+        "descr": "We makes every day full of energy and taste \n\n Want to try our beans?",
+        "className": "main"
+    },
+    "ourCoffee": {
+        "title": "Everything You Love About Coffee",
+        "descr": "We makes every day full of energy and taste \n\n Want to try our beans?",
+        "className": "our-coffee"
+    }
+}

@@ -1,16 +1,16 @@
 import React from 'react';
 import list from '../../../icons/list.svg';
-import line from '../../../icons/Line.svg'
+import blackList from '../../../icons/black-list.png';
 import './Hr.scss'
 
-const Hr = () => {
+const Hr = ({black}) => {
     return (
         <div>
             <div className="container">
-                <div className="wrapper__hr">
-                    <img src={line} alt="line" />
-                    <img src={list} alt="list" />
-                    <img src={line} alt="line" />
+                <div className="wrapper">
+                    {black ? <div className='hr_black'></div> : <div className='hr'></div>}
+                    {black ? <img src={blackList} alt="list" /> : <img src={list} alt="list" />}
+                    {black ? <div className='hr_black'></div> : <div className='hr'></div>}
                 </div>
             </div>
         </div>

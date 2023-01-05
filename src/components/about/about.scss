@@ -1,0 +1,22 @@
+.wrapper__about {
+    padding: 80px 0 100px 0;
+    white-space: pre-line;
+    &_title {
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #000000;
+    }
+    &_descr {
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        max-width: 589px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+    }
+}
