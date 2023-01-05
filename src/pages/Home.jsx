@@ -7,6 +7,7 @@ import Title from '../components/UI/title/Title';
 import title from '../location/en/PageList.json';
 import Hr from '../components/UI/hr/Hr';
 import MyButton from '../components/UI/button/MyButton';
+import Footer from '../components/footer/Footer';
 
 
 const Home = ({nameMenu}) => {
@@ -22,6 +23,7 @@ const Home = ({nameMenu}) => {
                     <MyButton/>
             </PageTop>
             <About content={obj}/>
+            <Footer nameMenu={nameMenu}/>
         </div>
     );
 };

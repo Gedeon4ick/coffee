@@ -6,6 +6,7 @@ import Bg from '../location/en/PageList.json'
 import ab from '../location/en/About.json';
 import About from '../components/about/About';
 import aboutImg from '../img/DarkCoffee.png';
+import Footer from '../components/footer/Footer';
 
 const FYP = ({nameMenu}) => {
     const obj = Bg.ForYourPleasure; 
@@ -14,7 +15,8 @@ const FYP = ({nameMenu}) => {
             <PageTop bg={obj.className} nameMenu={nameMenu}>
                 <Title content={obj}/>    
             </PageTop>       
-            <About aboutImg={aboutImg} content={ab.FYP}/>     
+            <About aboutImg={aboutImg} content={ab.FYP}/>
+            <Footer nameMenu={nameMenu}/>     
         </div>
     );
 };

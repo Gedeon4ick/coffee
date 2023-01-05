@@ -7,6 +7,7 @@ import Title from '../components/UI/title/Title';
 import About from '../components/about/About';
 import ab from '../location/en/About.json';
 import aboutImg from '../img/girlDribgCoffe.jpg';
+import Footer from '../components/footer/Footer';
 
 
 const Our = ({nameMenu}) => {
@@ -18,6 +19,7 @@ const Our = ({nameMenu}) => {
                 <Title content={obj}/>  
             </PageTop>
             <About aboutImg={aboutImg} content={ab.about}/>
+            <Footer nameMenu={nameMenu}/>
         </div>
     );
 };
