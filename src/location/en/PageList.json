@@ -5,8 +5,12 @@
         "className": "main"
     },
     "ourCoffee": {
-        "title": "Everything You Love About Coffee",
-        "descr": "We makes every day full of energy and taste \n\n Want to try our beans?",
+        "title": "Our Coffee",
         "className": "our-coffee"
+    },
+    "ForYourPleasure": {
+        "title": "For your pleasure",
+        "className": "ForYourPleasure"
     }
+    
 }

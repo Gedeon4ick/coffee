@@ -1,7 +1,5 @@
 .titul {
-    margin-top: -96px;
-    padding-top: 180px;
-    padding-bottom: 215px;
+    
     // background: url('../../img/Main\ bg.jpg') center center/cover no-repeat;
     // height: 100vh;
     .descr {
@@ -20,8 +18,21 @@
 
 .our-coffee {
     background: url('../../img/OurCoffeBg.png') center center/cover no-repeat;
+    margin-top: -96px;
+    padding-top: 130px;
+    padding-bottom: 84px;
 }
 
 .main {
     background: url('../../img/Main\ bg.jpg') center center/cover no-repeat;
+    margin-top: -96px;
+    padding-top: 180px;
+    padding-bottom: 215px;
+}
+
+.ForYourPleasure {
+    background: url('../../img/FYP.png') center center/cover no-repeat;
+    margin-top: -96px;
+    padding-top: 130px;
+    padding-bottom: 84px;
 }
