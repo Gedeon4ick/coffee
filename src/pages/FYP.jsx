@@ -5,6 +5,7 @@ import Title from '../components/UI/title/Title';
 import Bg from '../location/en/PageList.json'
 import ab from '../location/en/About.json';
 import About from '../components/about/About';
+import aboutImg from '../img/DarkCoffee.png';
 
 const FYP = ({nameMenu}) => {
     const obj = Bg.ForYourPleasure; 
@@ -13,7 +14,7 @@ const FYP = ({nameMenu}) => {
             <PageTop bg={obj.className} nameMenu={nameMenu}>
                 <Title content={obj}/>    
             </PageTop>       
-            <About content={ab.FYP}/>     
+            <About aboutImg={aboutImg} content={ab.FYP}/>     
         </div>
     );
 };

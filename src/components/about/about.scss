@@ -1,5 +1,14 @@
-.wrapper__about {
+.wr {
     padding: 80px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 79px;
+    img {
+        max-width: 275px;
+    }
+} 
+.wrapper__about {
     white-space: pre-line;
     &_title {
         text-align: center;

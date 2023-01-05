@@ -6,6 +6,7 @@ import our from '../location/en/PageList.json';
 import Title from '../components/UI/title/Title';
 import About from '../components/about/About';
 import ab from '../location/en/About.json';
+import aboutImg from '../img/girlDribgCoffe.jpg';
 
 
 const Our = ({nameMenu}) => {
@@ -16,7 +17,7 @@ const Our = ({nameMenu}) => {
             <PageTop bg={obj.className}nameMenu={nameMenu}>
                 <Title content={obj}/>  
             </PageTop>
-            <About content={ab.about}/>
+            <About aboutImg={aboutImg} content={ab.about}/>
         </div>
     );
 };
