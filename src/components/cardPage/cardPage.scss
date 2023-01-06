@@ -1,37 +1,24 @@
 .cardPage {
-    padding: 80px 0 110px 0;
-    background: url('../../img/BgCard.jpg') center center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    gap: 70px;
-
-    .card {
-        width: 220px;
-        height: 240px;
-        background: rgba(255, 255, 255, 0.65);
-        border-radius: 8px;
-        padding-top: 22px;
-        img {
-            width: 151px;
-            height: 130px;
-            display: block;
-            margin: auto;
-        }
-
-        .title {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
-            text-align: center;
-            color: #000000;
-        }
-
-        .price {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 20px;
-            text-align: center;
-            color: #000000;
-        }
+    padding-top: 80px;
+    .wr {
+        padding: 39px 0 100px 0 ;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 280px));
+        gap: 70px;
     }
+    .line {
+        width: 240px;
+        height: 0px;
+        border: 1px solid #000000;
+    }
+    .title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+        color: #000000;
+    }
+}
+.best {
+    background: url('../../img/BgCard.jpg') center center/cover no-repeat;
 }
