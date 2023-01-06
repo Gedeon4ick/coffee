@@ -1,20 +1,25 @@
-import React from 'react';
+import {React, useState} from 'react';
 import './cardPage.scss'
 import Card from '../../components/card/Card';
+import MyInput from '../UI/input/MyInput';
 
 const CardPage = ({arr, titleLine, isBest}) => {
+    const [state, setState] = useState(arr);
+    console.log(state);
+
     return (
         <div className={isBest ? 'cardPage ' + "best" : "cardPage" }>
+            { titleLine ? <div className='line'></div> : <div className='title'>Our best</div> }
+            { titleLine ? <MyInput/> : null }
             <div className="container">
-                { titleLine ? <div className='line'></div> : <div className='title'>Our best</div> }
                 <div className="wr">
-                    {arr.map((element) => {
+                    {state.map((element) => {
                         if (isBest) {
                             if (element.isBest) {
-                                return<Card element={element} key={element.id}/>
+                                return<Card  element={element} key={element.id}/>
                             }
                         }else {
-                            return <Card element={element} key={element.id}/>
+                            return <Card titleLine={true} element={element} key={element.id}/>
                         }
                     })}
                 </div>

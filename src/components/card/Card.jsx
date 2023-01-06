@@ -1,14 +1,14 @@
 import React from 'react';
 import './card.scss'
 
-const Card = ({element}) => {
+const Card = ({element, titleLine}) => {
     return (
-        <div className='card'>
+        <div className={titleLine ? 'cardTo' : 'card'}>
             <img src={element.image} alt="Photo" />
             <div className="title">
                 {element.title}
             </div>
-            <div>
+            <div className="country">
                 {element.country}
             </div>
             <div className="price">

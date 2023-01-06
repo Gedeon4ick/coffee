@@ -3,10 +3,11 @@
     .wr {
         padding: 39px 0 100px 0 ;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 280px));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 280px));
         gap: 70px;
     }
     .line {
+        margin: auto;
         width: 240px;
         height: 0px;
         border: 1px solid #000000;
