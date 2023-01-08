@@ -1,0 +1,50 @@
+.currentCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    &__img {
+        img {
+            max-width: 392px;
+            min-height: 355px;
+        }
+    }
+    &__text {
+        &_title {
+            margin-top: 25px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #000000;
+            span {
+                font-weight: 700;
+            }
+        }
+
+        &_descr {
+            max-width: 418px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: #000000;
+            span {
+                font-weight: 700;
+            }
+        }
+
+        &_price {
+            margin-top: 16px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: #000000;
+
+            span {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 35px;
+                color: #000000;
+            }
+        }
+    }
+}
