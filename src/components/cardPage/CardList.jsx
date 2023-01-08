@@ -10,8 +10,6 @@ const CardPage = ({arr, titleLine, isBest}) => {
     const [country, setCountry] = useState("");
     const [currentCard, setCurrentCard ] = useState(null)
 
-    console.log(currentCard);
-
     let data = arr;
 
     const changeCountry = (e) => {
