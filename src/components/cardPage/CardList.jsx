@@ -3,6 +3,7 @@ import './cardPage.scss'
 import Card from '../../components/card/Card';
 import MyInput from '../UI/input/MyInput';
 import CurentCard from '../currentCard/CurrentCard';
+import MyModal from '../myModal/MyModal';
 
 const CardPage = ({arr, titleLine, isBest}) => {
     
@@ -27,6 +28,8 @@ const CardPage = ({arr, titleLine, isBest}) => {
         data = data.filter(element => element.country.includes(country))
     }
 
+    
+
     return (
         
         <div className={isBest ? 'cardPage ' + "best" : "cardPage" }>
@@ -42,7 +45,7 @@ const CardPage = ({arr, titleLine, isBest}) => {
             <div className="container">
                 <div className="wr">
                     { currentCard ? 
-                    <CurentCard card={currentCard}/>
+                    <CurentCard back={setCurrentCard} card={currentCard}/>
                     : 
                     data.map((element) => {
                         if (isBest) {
@@ -54,6 +57,7 @@ const CardPage = ({arr, titleLine, isBest}) => {
                         }
                     })}
                 </div>
+
             </div>
         </div>
     );

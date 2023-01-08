@@ -10,6 +10,7 @@ import aboutImg from '../img/girlDribgCoffe.jpg';
 import Footer from '../components/footer/Footer';
 import CardList from '../components/cardPage/CardList';
 import arr from '../location/en/card';
+import MyModal from '../components/myModal/MyModal';
 
 
 const Our = ({nameMenu}) => {

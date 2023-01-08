@@ -1,9 +1,20 @@
-import React from 'react';
+import {React, useState } from 'react';
 import Title from '../../components/titul/MyTitul';
 import Hr from '../UI/hr/Hr'; 
 import './currentCard.scss'
+import MyModal from '../myModal/MyModal';
 
-const CurentCard = ({card}) => {
+const CurentCard = ({card, back}) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    function openModal() {
+        setIsModalOpen(true);
+    }
+
+    function closeModal() {
+        setIsModalOpen(false);
+    }
+
     return (
         <div className='container'>
             <div className="currentCard">
@@ -25,13 +36,15 @@ const CurentCard = ({card}) => {
                         Price: <span>{card.price}</span>
                     </div>
                     <div className="currentCard__text_btn">
-                        <button>Back</button>
-                        <button>Bay</button>
+                        <button onClick={() => back(null)} >Back</button>
+                        <button onClick={openModal}>Buy</button>
                     </div>
-
                 </div>
+                {isModalOpen && (
+                    <MyModal closeModal={closeModal}/>
+                )}
             </div>
-            
+           
 
         </div>
     );
