@@ -14,16 +14,21 @@ const CurentCard = ({card}) => {
                     <Title>
                         {card.title}
                     </Title>
-                    <Hr/>
+                    <Hr black={true}/>
                     <div className="currentCard__text_title">
                         <span>Country:</span> {card.country}
                     </div>
                     <div className="currentCard__text_descr">
-                        <span>Description:</span> {card.descr}
+                        <span> Description:</span> {card.descr}
                     </div>
                     <div className="currentCard__text_price">
                         Price: <span>{card.price}</span>
                     </div>
+                    <div className="currentCard__text_btn">
+                        <button>Back</button>
+                        <button>Bay</button>
+                    </div>
+
                 </div>
             </div>
             
@@ -33,3 +38,4 @@ const CurentCard = ({card}) => {
 };
 
 export default CurentCard;
+

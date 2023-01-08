@@ -8,9 +8,6 @@ import About from '../components/about/About';
 import ab from '../location/en/About.json';
 import aboutImg from '../img/girlDribgCoffe.jpg';
 import Footer from '../components/footer/Footer';
-import aromistico from '../img/aromistico.png'
-import solimo from '../img/solimo.png';
-import presto from '../img/presto.png';
 import CardList from '../components/cardPage/CardList';
 import arr from '../location/en/card';
 
