@@ -1,5 +1,5 @@
 import  {React} from 'react';
-import { BrowserRouter, Routes, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Routes, Route, Redirect } from 'react-router-dom';
 import './style/style.scss';
 import Home from './pages/Home';
 import Our from './pages/Our';
@@ -19,14 +19,14 @@ function App() {
  
 
   return (
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
             <Route exact path="/" element={<Home nameMenu={nameMenu}/>}/>
             <Route path="/Our" element={<Our nameMenu={nameMenu}/>}/>
             <Route  path="/FYP" element={<FYP nameMenu={nameMenu}/>}/>
             <Route path="*" element={<ERROR/>}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 
