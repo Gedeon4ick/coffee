@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/coffee/static/css/main.25dc991c.css",
+    "main.js": "/coffee/static/js/main.330b24b2.js",
+    "static/media/BgCard.jpg": "/coffee/static/media/BgCard.0a7b9cd461a37b4bc66a.jpg",
+    "static/media/FYP.png": "/coffee/static/media/FYP.bf3aa2137f80ed1f2354.png",
+    "static/media/OurCoffeBg.png": "/coffee/static/media/OurCoffeBg.69b5f4460c8dede57436.png",
+    "static/media/Main bg.jpg": "/coffee/static/media/Main bg.740a373eafef4347f616.jpg",
+    "static/media/Aromatic.svg": "/coffee/static/media/Aromatic.83b93c510f6962f408e3babbd80186b5.svg",
+    "static/media/Presto.svg": "/coffee/static/media/Presto.64e083ada70fb7bfb9d8c18b253cbb72.svg",
+    "static/media/Solimo.svg": "/coffee/static/media/Solimo.54bf00220b02339f5c39c645f58b8fb6.svg",
+    "static/media/girlDribgCoffe.jpg": "/coffee/static/media/girlDribgCoffe.b409eaa4aaffb291bdc7.jpg",
+    "static/media/DarkCoffee.png": "/coffee/static/media/DarkCoffee.2aae63680305b600856e.png",
+    "static/media/list.svg": "/coffee/static/media/list.a1450050bbf2e1caca986da9921ac44d.svg",
+    "static/media/black-list.svg": "/coffee/static/media/black-list.19ea14ff61f73f121048df972d9d0a61.svg",
+    "index.html": "/coffee/index.html",
+    "main.25dc991c.css.map": "/coffee/static/css/main.25dc991c.css.map",
+    "main.330b24b2.js.map": "/coffee/static/js/main.330b24b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25dc991c.css",
+    "static/js/main.330b24b2.js"
+  ]
+}
