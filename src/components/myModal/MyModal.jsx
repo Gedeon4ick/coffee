@@ -4,7 +4,7 @@ import './myModal.scss'
 const MyModal = ({closeModal}) => {
     
     return (
-        <div className="myModal" onClick={() => closeModal(false)}>
+        <div className="myModal" onClick={(e) => closeModal(e, false)}>
             <div className="myModal__content">
                 <div className="myModal__content_title">
                     Мы с вами свяжемся!
@@ -19,7 +19,7 @@ const MyModal = ({closeModal}) => {
                         <input type="email" />
                     </div>
                 </div>
-                <button onClick={() => closeModal(false)}>Submit</button>
+                <button onClick={(e) => closeModal(e, false)}>Submit</button>
             </div>
         </div>
     );

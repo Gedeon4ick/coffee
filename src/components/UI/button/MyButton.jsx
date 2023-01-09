@@ -1,9 +1,9 @@
 import React from 'react';
 import './MyButton.scss'
 
-const MyButton = () => {
+const MyButton = ({handleClick}) => {
     return (
-        <button>
+        <button onClick={handleClick}>
                 More
         </button>
     );

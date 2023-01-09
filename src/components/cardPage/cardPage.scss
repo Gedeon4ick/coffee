@@ -26,3 +26,20 @@
 .best {
     background: url('../../img/BgCard.jpg') center center/cover no-repeat;
 }
+
+@media (max-width: 450px) {
+    .cardPage {
+        .wr {
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .cardPage {
+        padding-top: 10px;
+        .wr {
+            padding-bottom: 20px;
+        }
+    }
+}

@@ -2,11 +2,11 @@ import React from 'react';
 import Hr from '../UI/hr/Hr';
 import './about.scss'
 
-const About = ({content, aboutImg}) => {
+const About = ({content, aboutImg, myRef}) => {
     const {title, descr} = content
     return (
         <div className='container'>
-            <div className="wr">
+            <div className="wr" ref={myRef}>
                 { aboutImg ? <img src={aboutImg} alt='aboutImg'/> : null }
                 <div className="wrapper__about">
                     <div className='wrapper__about_title'>{title}</div>

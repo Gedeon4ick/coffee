@@ -20,3 +20,14 @@
         }
     }
 }
+
+@media (max-width: 430px) {
+    .menu {
+        padding: 0;
+        padding-top: 10px;
+        justify-content: center;
+        ul {
+            gap: 20px;
+        }
+    }
+}

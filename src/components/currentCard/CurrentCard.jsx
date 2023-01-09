@@ -1,4 +1,4 @@
-import {React, useState } from 'react';
+import {React, useState, useEffect } from 'react';
 import Title from '../../components/titul/MyTitul';
 import Hr from '../UI/hr/Hr'; 
 import './currentCard.scss'
@@ -6,13 +6,44 @@ import MyModal from '../myModal/MyModal';
 
 const CurentCard = ({card, back}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [scrollY, setScrollY] = useState(0);
+
+
+    useEffect(() => {
+        function onOpen() {
+            document.body.style.marginRight = `${getScrollbarWidth()}px`;
+            document.body.classList.add("modal-open");
+            
+        }
+
+        function onClose() {
+            document.body.classList.remove("modal-open");
+            document.body.style.marginRight = null;
+        }
+
+        if (isModalOpen) {
+            onOpen()
+        } else {
+            onClose();
+        }
+    }, [isModalOpen, scrollY]);
+
+    function getScrollbarWidth() {
+        return window.innerWidth - document.documentElement.clientWidth;
+    }
+
 
     function openModal() {
         setIsModalOpen(true);
+    
     }
 
-    function closeModal() {
-        setIsModalOpen(false);
+    function closeModal(e) {
+        console.log(e);
+        if (e.target.className == "myModal" || e.target.tagName == "BUTTON") {
+            setIsModalOpen(false);
+        }
+
     }
 
     return (

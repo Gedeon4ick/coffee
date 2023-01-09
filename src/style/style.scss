@@ -5,6 +5,11 @@
     font-family: 'Merienda', cursive;
 }
 
+.modal-open {
+    overflow: hidden;
+    // margin-right: 15px;
+}
+
 .container {
     max-width: 1300px;
     margin: auto;
